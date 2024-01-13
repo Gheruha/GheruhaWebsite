@@ -1,3 +1,130 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.profile-photo {
+	display: block;
+}
+
+@media (max-width: 1400px) {
+	.profile-photo {
+		display: none;
+	}
+}
+
+body {
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	@apply bg-white dark:bg-zinc-950 text-black dark:text-white text-center;
+}
+
+.box {
+	transition: border-width 0.1s ease-in-out;
+}
+
+.box:hover {
+	border-width: 2px;
+}
+
+.card {
+	width: 250px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+.project-card {
+	width: 60%;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	height: 100%;
+	transition: background-color 0.3s ease;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.5s ease;
+	@apply bg-neutral-50 dark:bg-zinc-900 text-black dark:text-white text-center;
+}
+
+.card:hover .icon {
+	background-color: transparent;
+}
+
+.card:hover .content {
+	opacity: 1;
+}
+
+.project-card:hover .icon {
+	background-color: transparent;
+}
+
+.project-card:hover .content {
+	opacity: 1;
+}
+
+.show{
+	opacity: 1;
+} 
+
+/*.scroll-watcher {
+	height: 10px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	background-color: lime;
+	scale: 0 1;
+	animation: scroll-watcher linear;
+	animation-timeline: scroll();
+	transform-origin: left;
+}
+
+@keyframes scroll-watcher{
+	to {scale : 1 1;}
+}*/
+
+
+
+div > img{
+	animation: fade-in linear;
+	animation-timeline: view(500px 50px);
+}
+
+div > p{
+	animation: fade-in linear;
+	animation-timeline: view(500px 20px);
+}
+
+div > h2{
+	animation: fade-in linear;
+	animation-timeline: view(500px 50px);
+}
+
+article{
+	animation: fade-in linear;
+	animation-timeline: view(600px 50px);
+}
+
+
+@keyframes fade-in{
+	from {scale: .8; opacity:0;}
+	to {scale: 1; opacity: 1;}
+}
