@@ -37,6 +37,7 @@
 
 <!-- Main Class -->
 <body>
+	
 	<div class="scroll-watcher" />
 	<div class="w-full h-full" id="main-div">
 		<!-- Hero Section div-->
@@ -85,7 +86,7 @@
 					class="transition-all hover:scale-110 duration-300"
 				/>
 
-				<div class="flex flex-col text-left pl-16" id="about-me">
+				<div class="flex flex-col text-left pl-16 pb-96" id="about-me">
 					<h2 class="text-3xl font-medium pt-28">About me</h2>
 					<p>
 						My name is Gheruha Maxim. I love sports, food and computers. My main passion is
@@ -103,9 +104,9 @@
 			</div>
 		</div>
 
-		<article>
+		<article id="skills">
 			<div class="pl-28 pr-28">
-				<div class="pt-96 flex items-start justify-between" id="skills">
+				<div class="flex items-start justify-between">
 					<!-- svelte-ignore a11y-no-static-element-interactions -->
 					<div class="card rounded-md" on:mouseenter={handleHover} on:mouseleave={handleHover}>
 						<div class="icon big-icon">🌁</div>

@@ -80,9 +80,9 @@ body {
 	opacity: 1;
 }
 
-.show{
+.show {
 	opacity: 1;
-} 
+}
 
 /*.scroll-watcher {
 	height: 10px;
@@ -101,30 +101,33 @@ body {
 	to {scale : 1 1;}
 }*/
 
-
-
-div > img{
+div > img {
 	animation: fade-in linear;
 	animation-timeline: view(500px 50px);
 }
 
-div > p{
+div > p {
 	animation: fade-in linear;
 	animation-timeline: view(500px 20px);
 }
 
-div > h2{
+div > h2 {
 	animation: fade-in linear;
 	animation-timeline: view(500px 50px);
 }
 
-article{
+article {
 	animation: fade-in linear;
 	animation-timeline: view(600px 50px);
 }
 
-
-@keyframes fade-in{
-	from {scale: .8; opacity:0;}
-	to {scale: 1; opacity: 1;}
+@keyframes fade-in {
+	from {
+		scale: 0.8;
+		opacity: 0;
+	}
+	to {
+		scale: 1;
+		opacity: 1;
+	}
 }

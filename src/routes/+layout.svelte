@@ -1,12 +1,10 @@
 <script>
-	import '../app.css';
-	import ThemeSwitch from '$lib/themeSwitch/themeSwitch.svelte';
+	import '$lib/app.css';
+	import UpMenu from '$lib/upMenu/menu.svelte';
 </script>
 
 <div class="app">
-	<div class="w-full h-6 flex left-2 top-2 fixed">
-		<ThemeSwitch />
-	</div>
+	<UpMenu />
 	<slot />
 </div>
 
