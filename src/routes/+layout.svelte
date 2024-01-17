@@ -7,6 +7,3 @@
 	<UpMenu />
 	<slot />
 </div>
-
-<style>
-</style>

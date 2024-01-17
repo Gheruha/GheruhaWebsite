@@ -10,6 +10,7 @@
 	import about from '$lib/images/about.png';
 	import skills from '$lib/images/skills.png';
 	import projects from '$lib/images/projects.png';
+	import ThemeSwitch from '$lib/themeSwitch/themeSwitch.svelte';
 
 	// @ts-ignore
 	function explore_more(e) {
@@ -26,8 +27,6 @@
 	function handleHover() {
 		isHovered = !isHovered;
 	}
-
-	// Animation
 </script>
 
 <link
@@ -35,10 +34,13 @@
 	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
 />
 
-<!-- Main Class -->
 <body>
-	
-	<div class="scroll-watcher" />
+	<!-- ThemeSwitch Div -->
+	<div class="flex justify-start fixed p-2">
+		<ThemeSwitch />
+	</div>
+
+	<!-- Main Div -->
 	<div class="w-full h-full" id="main-div">
 		<!-- Hero Section div-->
 		<div class="flex pl-28 pr-28">
@@ -76,7 +78,6 @@
 		</div>
 
 		<!-- About me div-->
-
 		<div class="pl-28 pr-28">
 			<div class="pt-96 flex items-start">
 				<img
@@ -104,6 +105,7 @@
 			</div>
 		</div>
 
+		<!-- Skills div -->
 		<article id="skills">
 			<div class="pl-28 pr-28">
 				<div class="flex items-start justify-between">
@@ -154,6 +156,7 @@
 			</div>
 		</article>
 
+		<!-- Projects div -->
 		<article>
 			<div class="pl-28 pr-28">
 				<div class="pt-96 flex justify-center">
@@ -175,6 +178,10 @@
 				</div>
 			</div>
 		</article>
+
+		<div class="pt-80">
+			<h2 class="text-sm">made by Gheruha Maxim</h2>
+		</div>
 	</div>
 </body>
 
